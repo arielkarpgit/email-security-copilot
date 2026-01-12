@@ -1,0 +1,32 @@
+# --- Python / venv ---
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# --- Secrets ---
+.env
+
+# --- Data: keep corpus OUT of git ---
+data/raw/
+data/processed/
+
+# Corpus archives + extracted folders
+*.tar
+*.tar.gz
+*.tgz
+*.tar.bz2
+easy_ham*/
+hard_ham*/
+spam*/
+spam_2*/
+obsolete*/
+
+# Email containers (just in case)
+*.eml
+*.mbox
+*.pst
+
+# Artifacts
+artifacts/
+logs/

@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/email_security_copilot/__init__.py
+src/email_security_copilot.egg-info/PKG-INFO
+src/email_security_copilot.egg-info/SOURCES.txt
+src/email_security_copilot.egg-info/dependency_links.txt
+src/email_security_copilot.egg-info/requires.txt
+src/email_security_copilot.egg-info/top_level.txt
