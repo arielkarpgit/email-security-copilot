@@ -5,8 +5,8 @@ import torch
 from torch.utils.data import Dataset
 from transformers import AutoTokenizer
 
-from src.config import ProjectConfig
-from src.data.data import load_data
+from src.email_security_copilot.config import ProjectConfig
+from src.email_security_copilot.data.data import load_data
 import pandas as pd
 
 

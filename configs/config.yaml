@@ -1,0 +1,28 @@
+data:
+  spam_dir: "data/spam"
+  ham_dir:  "data/ham"
+  test_size: 0.2
+  random_seed: 42
+
+preprocessing:
+  enable: true
+  lowercase: true          # keep case for Transformers
+  strip_accents: true
+  remove_urls: false
+  remove_emails: false
+  remove_user_handles: false # @user
+  remove_hashtags: false    # keep, sometimes meaningful
+  remove_html: false
+  remove_digits: false
+  remove_punctuation: false # keep for Transformers
+  collapse_whitespace: true
+  lemmatize: false          # requires spaCy; Set true for classic NLP
+  language: "en"            # used if lemmatize = true
+
+model:
+  name: sentence-transformers/all-MiniLM-L6-v2
+  batch_size: 128
+  max_chars: 2000
+
+cache:
+  vectors_path: spam_project/artifacts/text_vectors.parquet
